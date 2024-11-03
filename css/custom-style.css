@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 :root {
-    --primary-color: #53c097;
-    --secondary-color: #9cd5e9;
-    --tertiary-color: #f0a15e;
+    --primary-color: #F1DCDC;
+    --secondary-color: #E06B9B;
+    --tertiary-color: #334B1C;
+    --fourth-color: #DEE373;
 }
 
 .scrolled {
@@ -13,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 strong {
@@ -61,7 +65,7 @@ strong {
 }
 
 .carousel-container {
-    border:1px solid red;
+    /* border:1px solid red; */
     height: 50px;
 }
 
@@ -73,6 +77,7 @@ strong {
 }
 
 .carousel-item img {
+    padding-top: 50px;
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -84,7 +89,7 @@ strong {
 }
 
 section {
-    height: 100vh;
+    height: 110vh;
     width: 100%;
 }
 
@@ -100,14 +105,34 @@ section {
     -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
 }
 
+#gallery img {
+    border: 3px solid #AF4AAD;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 70%;
+  }
+  
+  #gallery img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow */
+  }
+
 .new-section {
     height: 100vh;
-    background-color: white;
+    background-color: var(--fourth-color);
+}
+
+.new-section-again {
+    height: 120vh;
+    background-color: var(--fourth-color);
 }
 
 .last-section {
+    align-items: center;
+    justify-content: center;
     height: 80vh;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 .card {
@@ -117,7 +142,7 @@ section {
 .custom-card {
     /* border:1px solid red; */
     height: 50vh;
-    min-width: 24vw;
+    min-width: 20vw;
     padding:10px;
     border-right: 1px solid black;
 }
@@ -148,10 +173,14 @@ section {
 .slide-controls {
     height: 70px;
    padding:20px;
-   background-color: white;
+   background-color: var(--fourth-color);
    border:0px;
    border-radius: 10px;
    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
     -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.3);
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
 }
