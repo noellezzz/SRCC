@@ -164,64 +164,6 @@ body{
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.carousel-container {
-    width: 100%;
-    height: 500px;
-    position: relative;
-    overflow: hidden;
-    margin-top: 50px;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-.hero-carousel img {
-    height: 500px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Carousel controls */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-}
-
-/* Adjust hover effects on controls */
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Dots/Indicators */
-.carousel-indicators [data-bs-target] {
-    background-color: #000;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin: 3px;
-}
-
-.carousel-indicators [data-bs-target].active {
-    background-color: var(--primary-color);
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .carousel-container {
-        height: 300px;
-    }
-    .hero-carousel img {
-        height: 300px;
-    }
-}
-
-
 .map-section {
     color: var(--tertiary-color);
     height: 130vh; /* Full viewport height */
@@ -241,7 +183,7 @@ body{
 }
 
 .map-section a:hover{
-    background-color: var(--quinary-color);
+    background-color: var(--qu-color);
     transform: scale(1.05);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
