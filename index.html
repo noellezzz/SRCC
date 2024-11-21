@@ -6,9 +6,10 @@
     <title>School Page</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom-style.css">
+    <link rel="stylesheet" href="./css/anims.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div>
           <a class="navbar-brand" href="#"><img src="./assets/srcclogo.png" alt="Logo" style="height: 50px;"></a>
         </div>
@@ -53,28 +54,32 @@
         </div>
       </nav>
       
-    <section class="hero-section d-flex align-items-center text-center">
-        <div class="container">
-            <h1 class="display-4">Welcome to SRCCMSTHS</h1>
-            <p class="lead">Cayetanians behold your name!</p>
-            <a href="history.html" class="btn btn-primary btn-lg">Learn More</a>
-                <div class="search-container d-flex justify-content-center align-items-center">
-                    <form class="input-group">
-                    <input 
-                        type="text" 
-                        class="form-control search-input" 
-                        placeholder="Search Here" 
-                        aria-label="Search"/>
-                    <button 
-                        type="submit" 
-                        class="btn btn-success search-button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    </form>
-                </div>
+      <section class=" hero-section d-flex align-items-center text-center sticky-section">
+        <div class="container first-slide slide-cus">
+          <h1 class="display-4">Welcome to SRCCMSTHS</h1>
+          <p class="lead">Cayetanians behold your name!</p>
+          <a href="history.html" class="btn btn-primary btn-lg">Learn More</a>
+          <div class="search-container d-flex justify-content-center align-items-center">
+            <form class="input-group">
+              <input type="text" class="form-control search-input" placeholder="Search Here" aria-label="Search" />
+              <button type="submit" class="btn btn-success search-button">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
         </div>
-        
-        <!-- Wave SVG -->
+      
+        <div class="container second-slide slide-cus">
+          <h1 class="display-4">Explore Our History</h1>
+          <p class="lead">A legacy of excellence.</p>
+          <a href="history.html" class="btn btn-primary btn-lg">Read More</a>
+        </div>
+      
+        <div class="container third-slide slide-cus">
+          <h1 class="display-4">Join the Community</h1>
+          <p class="lead">Be a part of something bigger.</p>
+          <a href="join.html" class="btn btn-primary btn-lg">Get Involved</a>
+        </div>
         <div class="wave">
             <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#f8f9fa" fill-opacity="1" 
@@ -82,15 +87,16 @@
                 </path>
             </svg>
         </div>
-    </section>
+      </section>
+      
     
     <!-- Cards Section -->
-    <section class="cards-section py-5">
+    <section class="deep cards-section py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <!-- Card 1 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="uno fade-in card">
                         <div class="card-body">
                             <h2 class="card-title">MISSION</h2>
                             <p class="card-text">We shall achieve academic excellence in the field of science and technology by developing globally competitive students determine to cope in a technology-oriented society dedicated to God. </p>
@@ -99,7 +105,7 @@
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card">
+                    <div class="dos fade-in card">
                         <div class="card-body">
                             <h1 class="card-title">Apply Now!</h1>
                             <a href="#admissionDropdown" class="btn btn-primary btn-lg">View More</a>
@@ -108,8 +114,8 @@
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
+                    <div class="tres fade-in card">
+                        <div class=" card-body">
                             <h2 class="card-title">VISION</h2>
                             <p class="card-text">We shall emerge as the premier school of science and technology in the National Capital Region with pro-active leadership providing quality technical education to our learners thereby developing their full potentials and producing academically excellent and morally upright individuals.
 
@@ -198,6 +204,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/anims.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
 </html>

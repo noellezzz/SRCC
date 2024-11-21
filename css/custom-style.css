@@ -16,6 +16,10 @@ body{
     background-color: var(--quinary-color) !important;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    position: fixed;
+    top:0;
+    z-index: 10000;
+    width: 100%;
 }
 
 .navbar.navbar-light a {
@@ -34,13 +38,14 @@ body{
   }
 
 .hero-section {
-    height: 120vh; /* Full viewport height */
+    position: sticky;
+    height: 130vh !important; /* Full viewport height */
     background: linear-gradient(180deg, rgba(144, 27, 20, 0.5), rgba(233, 50, 34, 0.5)), url('/assets/hero1.jpg'); /* Adjusted transparency of gradient background with image */
     background-size: cover;
     background-position: center 100%; /* Adjusted to move the image more above */
     color: var(--tertiary-color);
-    position: relative;
     overflow: hidden;
+    /* border:12px solid red */
 }
 
 /* Centering Text */
@@ -137,6 +142,7 @@ body{
     background-color: var(--quinary-color);
     transform: scale(1.05);
     transition: transform 0.3s ease, background-color 0.3s ease;
+    
 }
 
 .card h2{
@@ -160,8 +166,9 @@ body{
 }
 .card:hover {
     background-color: var(--quaternary-color);
-    transform: scale(1.05);
+    transform: scale(1.05) !important;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.36);
 }
 
 .map-section {
