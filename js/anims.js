@@ -4,7 +4,7 @@ const handleScroll = () => {
     fadeIns.forEach((element) => {
         const rect = element.getBoundingClientRect();
         console.log()
-        if (window.scrollY > 2850) {
+        if (window.scrollY > 3450) {
             element.classList.add('visible');
         }
     });
@@ -19,8 +19,8 @@ handleScroll();
 const slides = document.querySelectorAll('.slide-cus');
 const stickySection = document.querySelector('.sticky-section');
 const slideHeight = window.innerHeight; // Height for each slide trigger point
-const fadeOutStart = 2200; // Start fading out
-const fadeOutEnd = 2300; // Completely faded out by this position
+const fadeOutStart = 3000; // Start fading out
+const fadeOutEnd = 3200; // Completely faded out by this position
 
 window.addEventListener('scroll', () => {
 
@@ -58,4 +58,21 @@ window.addEventListener('scroll', () => {
     stickySection.style.top = '0';
   }
     });
+});
+
+const heroCarousels = document.querySelectorAll('.hero-carousel');  // Select all carousel items
+
+heroCarousels.forEach((heroCarousel) => {
+  const titleHov = heroCarousel.querySelector('.title-hov');
+  const descHov = heroCarousel.querySelector('.desc-hov');
+
+  heroCarousel.addEventListener('mouseenter', () => {
+    titleHov.classList.add('show');
+    descHov.classList.add('show');
+  });
+
+  heroCarousel.addEventListener('mouseleave', () => {
+    titleHov.classList.remove('show');
+    descHov.classList.remove('show');
+  });
 });
