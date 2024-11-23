@@ -35,6 +35,24 @@
     display: inline-block; /* Ensures the text animates within its block */
     animation: typing 4s steps(100, end), blink 0.5s step-end infinite;
   }
+
+  @keyframes basicFade {
+    0% {
+      opacity: 0;
+    } 100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    } 100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
   
   /* Typing effect */
   @keyframes typing {
@@ -87,7 +105,7 @@
   }
 
   .deep {
-    margin-top: 3200px;
+    margin-top: 4150px;
   }
 
   .carousel-section {
@@ -100,4 +118,8 @@
 
     svg, path {
         border: 0px solid white !important;
+    }
+
+    .layout-3 {
+      border:1px solid red;
     }
