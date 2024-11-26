@@ -6,6 +6,7 @@
     --tertiary-color: #FFFFFF;
     --quaternary-color: #901B14;
     --quinary-color: #000666;
+    --qu-color: #F8F9FA;
 }
 
 body{
@@ -127,8 +128,8 @@ body{
     background-color: var(--quaternary-color);
   }
 
-.cards-section {
-    margin: -130px;;
+.cards-section  {
+    background: linear-gradient(180deg, var(--qu-color), var(--quaternary-color));
 }
 
 .card h1 {
@@ -210,12 +211,26 @@ body{
     font-size: 50px;
     font-weight: 600;
 }
+.map-section .map-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
 
+.map-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 20px;
+    align-items: flex;
+}
 .wave-again {
     rotate: 180deg;
     margin: -100px;
 }
 
+.carousel-section {
+    background: linear-gradient(180deg, var(--quaternary-color), var(--qu-color));
+}
 .carousel-container, .hero-carousel {
     height: 760px !important;
     position: relative;
