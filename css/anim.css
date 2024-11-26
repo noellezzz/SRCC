@@ -44,7 +44,7 @@
     }
   }
 
-  @keyframes fadeInCustom {
+  @keyframes asd {
     0% {
       opacity: 0;
       transform: translateX(-100px);

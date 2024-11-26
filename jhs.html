@@ -7,8 +7,8 @@
     <title>School Page</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/custom-style.css">
-    <link rel="stylesheet" href="./css/anims.css">
-    <link rel="stylesheet" href="./css/Layouts.css">
+    <link rel="stylesheet" href="./css/anim.css">
+    <link rel="stylesheet" href="./css/Layout2.css">
     <link rel="stylesheet" href="./css/cancel.css">
 </head>
 
@@ -64,12 +64,45 @@
         <div class="image-container">
             <div class="image-container__banner">
                 <div class="button-overlay">
-                    <button class="btn btn-primary custom-btn">Enroll Now!</button>
+                    <div class="d-flex flex-column gap-3 text-center">
+                        <h2 class="text-light">Enroll now!</h2>
+                        <p class="text-light">Start your educational journey here with us. Click on the button below and
+                            fill up the form.</p>
+                    </div>
+                    <hr class="text-light">
+                    <button class="btn btn-light custom-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open Application Form</button>
                 </div>
                 <img src="./assets/stock_students.jpg" alt="">
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Admission Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="custom-section first-section">
         <div class="layout-4">
@@ -309,6 +342,24 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/anims.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        var exampleModal = document.getElementById('exampleModal')
+        exampleModal.addEventListener('show.bs.modal', function (event) {
+            // Button that triggered the modal
+            var button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            var recipient = button.getAttribute('data-bs-whatever')
+            // If necessary, you could initiate an AJAX request here
+            // and then do the updating in a callback.
+            //
+            // Update the modal's content.
+            var modalTitle = exampleModal.querySelector('.modal-title')
+            var modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+            modalTitle.textContent = 'Admission Form'
+            modalBodyInput.value = recipient
+        })
+    </script>
 </body>
 
 </html>

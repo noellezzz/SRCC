@@ -267,7 +267,7 @@ body{
 
 .show {
     display: block;
-    animation: fadeIn 1s;
+    animation: fadeInCustom 1s;
 }
 
 .carousel-control-prev, .carousel-control-next {
