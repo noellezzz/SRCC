@@ -1,0 +1,125 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(100px); /* Optional: add a slight slide effect */
+    
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* Reset to original position */
+  }
+
+  .uno {
+    transition: opacity .5s ease-out, transform .5s ;
+  }
+
+  .dos {
+    transition: opacity 1s ease-out, transform 1s ;
+  }
+
+  .tres {
+    transition: opacity 1.5s ease-out, transform 1.5s ;
+  }
+
+
+
+  .typing-container {
+    width: fit-content; /* Adjusts to the content size */
+    /* border-right: 2px solid ; Simulates a cursor */
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Hides the text beyond the container width */
+    /* border:1px solid red; */
+  }
+  
+  .typing-animation {
+    display: inline-block; /* Ensures the text animates within its block */
+    animation: typing 4s steps(100, end), blink 0.5s step-end infinite;
+  }
+
+  @keyframes basicFade {
+    0% {
+      opacity: 0;
+    } 100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    } 100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  /* Typing effect */
+  @keyframes typing {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%; /* Fully reveal the text */
+    }
+  }
+  
+  /* Cursor blink effect */
+  @keyframes blink {
+    from {
+      border-right-color: black;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
+  .sticky-section {
+    height: 130vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 100% !important;
+    border: 0px solid red;
+  }
+  
+  .slide-cus {
+    position: absolute;
+    /* top: 0;
+    left: 50%;
+    transform: translateX(-50%); */
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+  }
+  
+  .slide-cus.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .slide-cus.exit {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  .deep {
+    margin-top: 4150px;
+  }
+
+  .carousel-section {
+    height: 130vh;
+  }
+    
+    .wave {
+        border:0 !important; 
+    }
+
+    svg, path {
+        border: 0px solid white !important;
+    }
+
+    .layout-3 {
+      border:1px solid red;
+    }

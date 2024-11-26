@@ -1,203 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Page</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/custom-style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Page</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/custom-style.css">
+  <link rel="stylesheet" href="./css/anims.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div>
-          <a class="navbar-brand" href="#"><img src="./assets/srcclogo.png" alt="Logo" style="height: 50px;"></a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div>
+      <a class="navbar-brand" href="#"><img src="./assets/srcclogo.png" alt="Logo" style="height: 50px;"></a>
+    </div>
+    <div class="container-fluid">
+      <div class="d-flex w-100 justify-content-center">
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+            <!-- Home Link -->
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+            <!-- Our School Dropdown -->
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="ourSchoolDropdown" role="button">
+                Our School
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="ourSchoolDropdown">
+                <li><a class="dropdown-item" href="history.html">History</a></li>
+                <li><a class="dropdown-item" href="missionvision.html">Mission and Vision</a></li>
+                <li><a class="dropdown-item" href="deped.html">DepEd Philosophy</a></li>
+                <li><a class="dropdown-item" href="student.html">Student Handbook</a></li>
+                <li><a class="dropdown-item" href="osh.html">Office of School Head</a></li>
+              </ul>
+            </div>
+
+            <!-- Admission Dropdown -->
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="admissionDropdown" role="button">
+                Admission
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
+                <li><a class="dropdown-item" href="jhs.html">Junior High School</a></li>
+                <li><a class="dropdown-item" href="shs.html">Senior High School</a></li>
+              </ul>
+            </div>
+
+            <!-- Clubs Link -->
+            <a class="nav-link" href="clubs.html">Clubs</a>
+          </div>
         </div>
-        <div class="container-fluid">
-          <div class="d-flex w-100 justify-content-center">
-            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-      
-                <!-- Home Link -->
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-      
-                <!-- Our School Dropdown -->
-                <div class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="index.html" id="ourSchoolDropdown" role="button">
-                    Our School
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="ourSchoolDropdown">
-                    <li><a class="dropdown-item" href="history.html">History</a></li>
-                    <li><a class="dropdown-item" href="missionvision.html">Mission and Vision</a></li>
-                    <li><a class="dropdown-item" href="deped.html">DepEd Philosophy</a></li>
-                    <li><a class="dropdown-item" href="student.html">Student Handbook</a></li>
-                    <li><a class="dropdown-item" href="osh.html">Office of School Head</a></li>
-                  </ul>
-                </div>
-      
-                <!-- Admission Dropdown -->
-                <div class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="index.html" id="admissionDropdown" role="button">
-                    Admission
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="admissionDropdown">
-                    <li><a class="dropdown-item" href="jhs.html">Junior High School</a></li>
-                    <li><a class="dropdown-item" href="shs.html">Senior High School</a></li>
-                  </ul>
-                </div>
-      
-                <!-- Clubs Link -->
-                <a class="nav-link" href="clubs.html">Clubs</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class=" hero-section d-flex align-items-center text-center sticky-section">
+    <div class="container first-slide slide-cus">
+      <h1 class="display-4">Welcome to SRCCMSTHS</h1>
+      <p class="lead">Cayetanians behold your name!</p>
+      <a href="history.html" class="btn btn-primary btn-lg">Learn More</a>
+      <div class="search-container d-flex justify-content-center align-items-center">
+        <form class="input-group">
+          <input type="text" class="form-control search-input" placeholder="Search Here" aria-label="Search" />
+          <button type="submit" class="btn btn-success search-button buttonnn">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="quotation">
+        “Everybody talks about the new normal. Let’s forget that. Let’s think about the new future. We have an
+        opportunity to shape the future. God put us at this time of COVID-19. You are the batch that graduated at the
+        time of COVID-19. I believe you will all do great things for the city and your country."
+
+        <br> <br>
+        <strong>- Mayor Lino Edgardo S. Cayetano</strong>
+      </div>
+    </div>
+
+    <div class="container second-slide slide-cus">
+      <div class="sliding-title">
+        <h1>Facilities</h1>
+        <div class="sm-text">
+          Our school offers a wide range of exceptional facilities designed to support both academic excellence and
+          personal growth. Our state-of-the-art classrooms are equipped with the latest technology to enhance learning,
+          while our well-stocked libraries provide a quiet space for study and exploration. We also have dedicated
+          science and computer labs, enabling hands-on experiences for students to engage with their subjects in
+          practical, innovative ways.
+
+          For sports enthusiasts, our modern sports facilities include an outdoor playing field, basketball courts, a
+          gymnasium, and swimming pool, providing ample opportunities for physical development and teamwork.
+          Additionally, the school has creative arts spaces, including art rooms, music studios, and drama halls,
+          encouraging students to express themselves through various forms of art.
+
+          Our school also prioritizes student well-being with comfortable, welcoming lounges, a health center staffed by
+          professional nurses, and a nutritious cafeteria serving balanced meals. With these top-tier facilities,
+          students are empowered to reach their full potential, both academically and personally.
+        </div>
+      </div>
+      <div class="custom-collage">
+        <div class="col">
+          <div class="pic1">
+            <img
+              src="https://lh4.googleusercontent.com/PGqozaeznCmmz0IM81JG7fgTLV2o6eGWErpH8arzRAC79c_xBeAU1NET-meyJFqK-Fd9G1zWiaNGpJcoe2EqCkw=w16383"
+              alt="">
+          </div>
+          <div class="pic2">
+            <img
+              src="https://lh6.googleusercontent.com/kaFGl3D3KtRJGNMC3ke32IbAQbaVpAxojDI8BM7ZoHN-ZXv2dxHUA9FwGg-ATrNJRCeuzIKnYAtZM2EOhNMwsdw=w16383"
+              alt="">
+          </div>
+        </div>
+        <div class="col">
+          <div class="pic3">
+            <img
+              src="https://lh5.googleusercontent.com/ppmaHKVHyB4kMXHLYWb107vvW7kWbX12tcwcm1g2jaw0v5RFPwV0KcIlViN6YrxFkPneOaaRQiEeSq19eytgqCA=w16383"
+              alt="">
+          </div>
+          <div class="pic4">
+            <img
+              src="https://lh5.googleusercontent.com/LYet1z1O-mLbz1plW9vHMjORnn-zCOfT6fDFXmypBYtX_g3CK3sEHp5C7SRyH66V4b-yiVdVXdd2lJDld519SmchcV5L1xnhN_raO9VFYc2PUREu4oKdxxOMtjqE_fOdxA=w1280"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container third-slide slide-cus">
+      <h1 class="display-4">Developing Excellence</h1>
+      <hr>
+      <div class="tri-grid">
+        <div class="grid-item">
+          <div class="item-img__container">
+            <img src="https://lh6.googleusercontent.com/lXvG0a5bFyI39J4NPies6qiAYksVPZtdgEjwGziaJdAllBSU_RNTEG_yEUzgUnhR5PQwXjhrscZAW9h6c3lGTfM=w16383" alt="">
+          </div>
+          <div class="sm-spacer"></div>
+          <h4>International Talent Mathematics Competition (ITMC) Awardees</h4>
+        </div>
+        <div class="grid-item">
+          <div class="item-img__container">
+            <div class="item-img__container">
+              <img src="https://lh3.googleusercontent.com/pBZnyRGFq_VJDtoxHAmXhgcaRJXf2P8QJAxCKbdStvtDaq0-KsmT5UPJnpdM_MVFRAXKdewvy9slxOp8z1Mdgck=w16383" alt="">
+            </div>
+            <div class="sm-spacer"></div>
+            <h4>1st Filipino IDEAS Expo</h4>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="item-img__container">
+            <div class="item-img__container">
+              <img src="https://lh5.googleusercontent.com/a2xcOzJO1aRb17XWW69SPTZEc0duFvpfn9iS-3kiGfBxZTlTnMvtJA0du6lkFQXy97oJrUgwllrdpQaH3CWtAGE=w16383" alt="">
+            </div>
+            <div class="sm-spacer"></div>
+            <h4>Philippine International Mathematical Olympiad 2021 (PhIMO) Awardees</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container fourth-slide slide-cus">
+      <h1 class="display-4">Join the Community</h1>
+      <p class="lead">Be a part of something bigger.</p>
+      <a href="join.html" class="btn btn-primary btn-lg">Get Involved</a>
+    </div>
+    <div class="wave">
+      <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#f8f9fa" fill-opacity="1"
+          d="M0,160L48,160C96,160,192,160,288,176C384,192,480,224,576,213.3C672,203,768,149,864,144C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- Cards Section -->
+  <section class="deep cards-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="uno fade-in card">
+            <div class="card-body">
+              <h2 class="card-title">MISSION</h2>
+              <p class="card-text">We shall achieve academic excellence in the field of science and technology by
+                developing globally competitive students determine to cope in a technology-oriented society dedicated to
+                God. </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="dos fade-in card">
+            <div class="card-body">
+              <h1 class="card-title">Apply Now!</h1>
+              <a href="#admissionDropdown" class="btn btn-primary btn-lg">View More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="tres fade-in card">
+            <div class=" card-body">
+              <h2 class="card-title">VISION</h2>
+              <p class="card-text">We shall emerge as the premier school of science and technology in the National
+                Capital Region with pro-active leadership providing quality technical education to our learners thereby
+                developing their full potentials and producing academically excellent and morally upright individuals.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-section p-5">
+    <div class="carousel-container mt-5">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="hero-carousel carousel-item active">
+            <img src="./assets/carousel1.jpg" class="d-block w-100" alt="Slide 1">
+            <div class="overlay-text">
+              <div class="title-hov">
+                Sample Text 1
+              </div>
+              <div class="desc-hov">
+                Sample Desc
+              </div>
+            </div>
+          </div>
+          <div class="hero-carousel carousel-item">
+            <img src="./assets/carousel2.jpg" class="d-block w-100" alt="Slide 2">
+            <div class="overlay-text">
+              <div class="title-hov">
+                Sample Text 2
+              </div>
+              <div class="desc-hov">
+                Sample Desc
+              </div>
+            </div>
+          </div>
+          <div class="hero-carousel carousel-item">
+            <img src="./assets/carousel3.jpg" class="d-block w-100" alt="Slide 3">
+            <div class="overlay-text">
+              <div class="title-hov">
+                Sample Text 3
+              </div>
+              <div class="desc-hov">
+                Sample Desc
+              </div>
+            </div>
+          </div>
+          <div class="hero-carousel carousel-item">
+            <img src="./assets/carousel4.jpg" class="d-block w-100" alt="Slide 4">
+            <div class="overlay-text">
+              <div class="title-hov">
+                Sample Text 4
+              </div>
+              <div class="desc-hov">
+                Sample Desc
+              </div>
+            </div>
+          </div>
+          <div class="hero-carousel carousel-item">
+            <img src="./assets/carousel6.jpg" class="d-block w-100" alt="Slide 5">
+            <div class="overlay-text">
+              <div class="title-hov">
+                Sample Text 5
+              </div>
+              <div class="desc-hov">
+                Sample Desc
+              </div>
+            </div>
+          </div>
+          <div class="hero-carousel carousel-item">
+            <img src="./assets/carousel7.jpg" class="d-block w-100" alt="Slide 6">
+            <div class="overlay-text">
+              <div class="title-hov">
+                Sample Text 6
+              </div>
+              <div class="desc-hov">
+                Sample Desc
+              </div>
+            </div>
+          </div>
+          <div class="hero-carousel carousel-item">
+            <img src="./assets/carousel8.jpg" class="d-block w-100" alt="Slide 7">
+            <div class="overlay-text">
+              <div class="title-hov">
+                Sample Text 7
+              </div>
+              <div class="desc-hov">
+                Sample Desc
               </div>
             </div>
           </div>
         </div>
-      </nav>
-      
-    <section class="hero-section d-flex align-items-center text-center">
-        <div class="container">
-            <h1 class="display-4">Welcome to SRCCMSTHS</h1>
-            <p class="lead">Cayetanians behold your name!</p>
-            <a href="history.html" class="btn btn-primary btn-lg">Learn More</a>
-                <div class="search-container d-flex justify-content-center align-items-center">
-                    <form class="input-group">
-                    <input 
-                        type="text" 
-                        class="form-control search-input" 
-                        placeholder="Search Here" 
-                        aria-label="Search"/>
-                    <button 
-                        type="submit" 
-                        class="btn btn-success search-button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    </form>
-                </div>
-        </div>
-        
-        <!-- Wave SVG -->
-        <div class="wave">
-            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#f8f9fa" fill-opacity="1" 
-                      d="M0,160L48,160C96,160,192,160,288,176C384,192,480,224,576,213.3C672,203,768,149,864,144C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-        </div>
-    </section>
-    
-    <!-- Cards Section -->
-    <section class="cards-section py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <!-- Card 1 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">MISSION</h2>
-                            <p class="card-text">We shall achieve academic excellence in the field of science and technology by developing globally competitive students determine to cope in a technology-oriented society dedicated to God. </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="card-title">Apply Now!</h1>
-                            <a href="#admissionDropdown" class="btn btn-primary btn-lg">View More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">VISION</h2>
-                            <p class="card-text">We shall emerge as the premier school of science and technology in the National Capital Region with pro-active leadership providing quality technical education to our learners thereby developing their full potentials and producing academically excellent and morally upright individuals.
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <section class="map-section py-5">
 
-    <section class="carousel-section p-5">
-        <div class="carousel-container mt-5">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="hero-carousel carousel-item active">
-                        <img src="./assets/carousel1.jpg" class="d-block w-100" alt="Slide 1">
-                    </div>
-                    <div class="hero-carousel carousel-item">
-                        <img src="./assets/carousel2.jpg" class="d-block w-100" alt="Slide 2">
-                    </div>
-                    <div class="hero-carousel carousel-item">
-                        <img src="./assets/carousel3.jpg" class="d-block w-100" alt="Slide 3">
-                    </div>
-                    <div class="hero-carousel carousel-item">
-                        <img src="./assets/carousel4.jpg" class="d-block w-100" alt="Slide 4">
-                    </div>
-                    <div class="hero-carousel carousel-item">
-                        <img src="./assets/carousel6.jpg" class="d-block w-100" alt="Slide 5">
-                    </div>
-                    <div class="hero-carousel carousel-item">
-                        <img src="./assets/carousel7.jpg" class="d-block w-100" alt="Slide 6">
-                    </div>
-                    <div class="hero-carousel carousel-item">
-                        <img src="./assets/carousel8.jpg" class="d-block w-100" alt="Slide 7">
-                    </div>
-                </div>
-                <!-- Carousel Controls -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
+    <div class="wave-again">
+      <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#f8f9fa" fill-opacity="1"
+          d="M0,160L48,160C96,160,192,160,288,176C384,192,480,224,576,213.3C672,203,768,149,864,144C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </div>
 
-    <section class="map-section py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Our Location</h1>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.285711650788!2d121.05901377510467!3d14.525642985951857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8b745953975%3A0x2f63a6802173dd10!2sSenator%20Renato%20%22Compa%C3%B1ero%22%20Cayetano%20Memorial%20Science%20and%20Technology%20High%20School!5e0!3m2!1sen!2sph!4v1732125806016!5m2!1sen!2sph"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
 
-        <div class="wave-again">
-            <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#f8f9fa" fill-opacity="1" 
-                      d="M0,160L48,160C96,160,192,160,288,176C384,192,480,224,576,213.3C672,203,768,149,864,144C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-                </path>
-            </svg>
-        </div>
+      </div>
 
-        <div class="container">
-            <h1 class="text-center mb-4">Our Location</h1>
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3862.285711650788!2d121.05901377510467!3d14.525642985951857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c8b745953975%3A0x2f63a6802173dd10!2sSenator%20Renato%20%22Compa%C3%B1ero%22%20Cayetano%20Memorial%20Science%20and%20Technology%20High%20School!5e0!3m2!1sen!2sph!4v1732125806016!5m2!1sen!2sph" 
-                    width="100%" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
-                
-            </div>
+      <div class="text-center mt-4"></div>
+      <a href="directions.html" class="btn btn-primary btn-lg">View Directions</a>
+    </div>
 
-            <div class="text-center mt-4"></div>
-                <a href="directions.html" class="btn btn-primary btn-lg">View Directions</a>
-            </div>
-            
-        </div>
-        
-    </section>
-    
-    
-    
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/anims.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </body>
+
 </html>
