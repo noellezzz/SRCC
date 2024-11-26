@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/anim.css">
     <link rel="stylesheet" href="./css/Layout2.css">
     <link rel="stylesheet" href="./css/cancel.css">
+    <link rel="stylesheet" href="./css/new.css">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
                                 <li><a class="dropdown-item" href="missionvision.html">Mission and Vision</a></li>
                                 <li><a class="dropdown-item" href="deped.html">DepEd Philosophy</a></li>
                                 <li><a class="dropdown-item" href="student.html">Student Handbook</a></li>
-                                <li><a class="dropdown-item" href="osh.html">Office of School Head</a></li>
+                                <!-- <li><a class="dropdown-item" href="osh.html">Office of School Head</a></li> -->
                             </ul>
                         </div>
 
@@ -53,7 +54,7 @@
 
 
                         <!-- Clubs Link -->
-                        <a class="nav-link" href="clubs.html">Clubs</a>
+                        <!-- <a class="nav-link" href="clubs.html">Clubs</a> -->
                     </div>
                 </div>
             </div>
@@ -66,11 +67,12 @@
                 <div class="button-overlay">
                     <div class="d-flex flex-column gap-3 text-center">
                         <h2 class="text-light">Enroll now!</h2>
-                        <p class="text-light">Start your educational journey here with us. Click on the button below and
+                        <p class="text-light border-bottom">Start your educational journey here with us. Click on the button below and
                             fill up the form.</p>
                     </div>
                     <hr class="text-light">
-                    <button class="btn btn-light custom-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open Application Form</button>
+                    <button class="btn btn-light custom-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-bs-whatever="@getbootstrap">Open Application Form</button>
                 </div>
                 <img src="./assets/stock_students.jpg" alt="">
             </div>
@@ -87,16 +89,18 @@
                 <div class="modal-body">
                     <!-- Progress Bar -->
                     <div class="progress mb-4">
-                        <div class="progress-bar" role="progressbar" id="formProgress" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Step 1 of 3</div>
+                        <div class="progress-bar" role="progressbar" id="formProgress" style="width: 33%;"
+                            aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">Step 1 of 3</div>
                     </div>
-    
+
                     <!-- Multi-Step Form -->
                     <form id="admissionForm">
                         <!-- Step 1: Student Details -->
                         <div class="form-step" id="step1">
                             <div class="mb-3">
                                 <label for="student-name" class="form-label">Student Name</label>
-                                <input type="text" class="form-control" id="student-name" placeholder="Enter full name" required>
+                                <input type="text" class="form-control" id="student-name" placeholder="Enter full name"
+                                    required>
                             </div>
                             <div class="mb-3">
                                 <label for="student-dob" class="form-label">Date of Birth</label>
@@ -112,41 +116,47 @@
                                 </select>
                             </div>
                         </div>
-    
+
                         <!-- Step 2: Contact Information -->
                         <div class="form-step d-none" id="step2">
                             <div class="mb-3">
                                 <label for="parent-name" class="form-label">Parent/Guardian Name</label>
-                                <input type="text" class="form-control" id="parent-name" placeholder="Enter parent/guardian name" required>
+                                <input type="text" class="form-control" id="parent-name"
+                                    placeholder="Enter parent/guardian name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="contact-number" class="form-label">Contact Number</label>
-                                <input type="tel" class="form-control" id="contact-number" placeholder="Enter contact number" required>
+                                <input type="tel" class="form-control" id="contact-number"
+                                    placeholder="Enter contact number" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email-address" class="form-label">Email Address</label>
-                                <input type="email" class="form-control" id="email-address" placeholder="Enter email address" required>
+                                <input type="email" class="form-control" id="email-address"
+                                    placeholder="Enter email address" required>
                             </div>
                         </div>
-    
+
                         <!-- Step 3: Address and Previous School Information -->
                         <div class="form-step d-none" id="step3">
                             <div class="mb-3">
                                 <label for="address" class="form-label">Home Address</label>
-                                <textarea class="form-control" id="address" rows="2" placeholder="Enter home address" required></textarea>
+                                <textarea class="form-control" id="address" rows="2" placeholder="Enter home address"
+                                    required></textarea>
                             </div>
                             <div class="mb-3">
                                 <label for="previous-school" class="form-label">Previous School Attended</label>
-                                <input type="text" class="form-control" id="previous-school" placeholder="Enter previous school name">
+                                <input type="text" class="form-control" id="previous-school"
+                                    placeholder="Enter previous school name">
                             </div>
                             <div class="mb-3">
                                 <label for="last-grade" class="form-label">Last Grade Completed</label>
-                                <input type="text" class="form-control" id="last-grade" placeholder="Enter last grade completed">
+                                <input type="text" class="form-control" id="last-grade"
+                                    placeholder="Enter last grade completed">
                             </div>
                         </div>
                     </form>
                 </div>
-    
+
                 <!-- Navigation Buttons -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" id="prevBtn" disabled>Previous</button>
@@ -187,7 +197,7 @@
             <br>
 
             <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
+                <!-- <div class="accordion-item text-start">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -205,8 +215,8 @@
                             <code>.accordion-body</code>, though the transition does limit overflow.
                         </div>
                     </div>
-                </div>
-                <div class="accordion-item">
+                </div> -->
+                <div class="accordion-item text-start">
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -216,16 +226,20 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body cancel-anims">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
-                            the collapse plugin adds the appropriate classes that we use to style each element. These
-                            classes control the overall appearance, as well as the showing and hiding via CSS
-                            transitions. You can modify any of this with custom CSS or overriding our default variables.
-                            It's also worth noting that just about any HTML can go within the
-                            <code>.accordion-body</code>, though the transition does limit overflow.
+
+                            <ul>
+                                <li>Must be a bona fide Grade 6 elementary student in any public or private school.</li> <br> <br>
+                                Must have a final grade of <br>
+                                <li>85% or higher in three (3) major subjects – Science, English and Mathematics</li>
+                                <li>83% for minor subjects, </li>
+                                <li>Must have no grades lower than 80% in any grading period.</li>
+                                <li>Must be of good moral character and have never been involved in any school violation.</li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item text-start">
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -244,7 +258,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item text-start">
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -257,40 +271,43 @@
                             Submit the application requirements (the duly signed accomplished forms and other related
                             documents in a long brown envelope) to the Registrars' Office or to the Guard-On-Duty.
 
+                            <br><br>
+
 
 
                             On the upper left corner of the back side of the envelope, please properly label it with:
 
+                            <br><br>
 
+                            <ol>
 
-                            1. The applicant's complete name (SURNAME, FIRST NAME, MIDDLE NAME)
+                                <li>The applicant's complete name (SURNAME, FIRST NAME, MIDDLE NAME)</li>
+                                <li>Contact number</li>
+                                <li>Personal or parents' email address</li>
+                                <li>Name of current school</li>
 
-                            2. Contact number
-
-                            3. Personal or parents' email address
-
-                            4. Name of current school
-
-
+                            </ol>
 
                             Qualified applicants for enrolment shall be announced only after the scheduled interview to
                             be conducted by a panel composed of Division Supervisors and Faculty members of the school.
 
-
+                            <br><br>
 
                             The following criteria for admission screening is as follows:
 
-                            60% - Grade 5 Final Grade in Science, English and Mathematics
+                            <br><br>
 
-                            30% - Interview
-
-                            10% - Certificate of Winnings in Science and Mathematics
-
-                            Total of 100%
+                            <ul>
+                                <li>60% - Grade 5 Final Grade in Science, English and Mathematics</li>
+                                <li>30% - Interview</li>
+                                <li>10% - Certificate of Winnings in Science and Mathematics</li>
+                                <li>Total of 100%</li>
+                            </ul>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item text-start">
                     <h2 class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -302,25 +319,23 @@
                         <div class="accordion-body cancel-anims">
                             Must be a bona fide Grade 6 elementary student in any public or private school.
 
-
+                            <br><br>
 
                             Must have a final grade of:
+                            
+                            <br><br>
 
-                            85% or higher in three (3) major subjects – Science, English and Mathematics
-
-                            83% for minor subjects,
-
-
-
-                            Must have no grades lower than 80% in any grading period.
-
-
-
-                            Must be of good moral character and have never been involved in any school violation.
+                            <ul>
+                                <li>85% or higher in three (3) major subjects – Science, English and Mathematics</li>
+                                <li>83% for minor subjects,</li>
+                                <li>Must have no grades lower than 80% in any grading period.</li>
+                                <li>Must be of good moral character and have never been involved in any school violation.</li>
+                            </ul>
+                        
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item text-start">
                     <h2 class="accordion-header" id="headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -332,29 +347,33 @@
                         <div class="accordion-body cancel-anims">
                             a. Fully accomplished application form
 
+                            <br><br>
+
                             Application Forms are available from the guard-on-duty on both schools starting March 8,
                             2021 or you may download the form through this link:
                             https://drive.google.com/drive/folders/1-m2dzEcFADi_nLjPJ-3lUUrl6Q7CmlUR?usp=sharing
 
+                            <br><br>
 
 
-                            b. Certified True Copy of Form 138 (Report Card in Grade 5 only)
 
-                            c. Certified True Copy of Certificate of Winnings in Science and Math Competitions
+                            b. Certified True Copy of Form 138 (Report Card in Grade 5 only) <br>
 
-                            d. Photocopy of Birth Certificate (PSA)
+                            c. Certified True Copy of Certificate of Winnings in Science and Math Competitions <br>
 
-                            e. Certificate of Good Moral Character in Grade 6
+                            d. Photocopy of Birth Certificate (PSA) <br>
 
-                            f. Two (2) identical recent 2 x 2 ID pictures with name of student-applicant
+                            e. Certificate of Good Moral Character in Grade 6 <br>
 
-                            g. Any Proof of Billing
+                            f. Two (2) identical recent 2 x 2 ID pictures with name of student-applicant <br>
 
-                            h. Voters' Certification of Parents or Guardian
+                            g. Any Proof of Billing <br>
+
+                            h. Voters' Certification of Parents or Guardian <br>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item text-start">
                     <h2 class="accordion-header" id="headingSeven">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
@@ -367,7 +386,7 @@
                             The result of qualified applicants will be posted on June 7, 2021 at the school's bulletin
                             board, official website or FB page.
 
-
+                            <br><br>
 
                             Facebook - Cayetano SciTech News & Update
                         </div>
@@ -403,7 +422,7 @@
         const nextBtn = document.getElementById('nextBtn');
         const submitBtn = document.getElementById('submitBtn');
         let currentStep = 0;
-    
+
         function showStep(step) {
             steps.forEach((el, index) => {
                 el.classList.toggle('d-none', index !== step);
@@ -414,30 +433,30 @@
             nextBtn.classList.toggle('d-none', step === steps.length - 1);
             submitBtn.classList.toggle('d-none', step !== steps.length - 1);
         }
-    
+
         prevBtn.addEventListener('click', () => {
             if (currentStep > 0) {
                 currentStep--;
                 showStep(currentStep);
             }
         });
-    
+
         nextBtn.addEventListener('click', () => {
             if (currentStep < steps.length - 1) {
                 currentStep++;
                 showStep(currentStep);
             }
         });
-    
+
         document.getElementById('admissionForm').addEventListener('submit', (e) => {
             e.preventDefault();
             alert('Application submitted successfully!');
             // Handle form submission here
         });
-    
+
         showStep(currentStep); // Initialize the first step
     </script>
-    
+
     <script>
         var exampleModal = document.getElementById('exampleModal')
         exampleModal.addEventListener('show.bs.modal', function (event) {
