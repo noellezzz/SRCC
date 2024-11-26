@@ -170,3 +170,48 @@ h1 {
 .small {
     max-height: 80vh !important;
 }
+
+.cancel-anims {
+    animation: none;
+}
+
+.cancel-anims * {
+    animation: none;
+}
+
+.image-container {
+    margin-top: 100px;
+    /* border:1px solid red; */
+    width: 100%;
+    height: 800px;
+    padding:50px
+}
+
+.image-container .image-container__banner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* border:1px solid red; */
+}
+
+.image-container__banner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.image-container__banner .button-overlay {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding:100px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0,0,0,0.3);
+}
+
+.custom-btn {
+    padding:10px 20px !important;
+}
